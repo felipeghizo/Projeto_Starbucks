@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --corbucks: rgb(35, 93, 61);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header{
+    padding: 20px 0;
+}
+/* Header center */
+div.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+/* header logo */
+picture.logo{
+    width: 50%;
+}
+
+/* header menu */
+nav.menu{
+    width: 50%;
+    padding-top: 50px;
+    text-align: right;
+}
+
+/* Header opcoes*/
+nav.menu a{
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+/* article */
+article{
+    display: inline-block;  
+    max-width: 600px;
+    margin: 5% 51px;
+    padding: 0 1%;
+}
+
+/* article title */
+h1{
+    font-size: 3.8em;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+h1.titulo{
+    display: inline;  
+}
+h1#starbucks{
+    color: var(--corbucks);
+    font-weight: 700;
+    font-size: 4.4em;
+}
+
+/* article content */
+article>p{
+    margin-top: 5px;
+}
+
+/* article botao */
+div#background_botao{
+    margin-top: 10px;
+    background-color: var(--corbucks);
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+}
+a#botao{
+    position: absolute;
+    margin: 10px 25px;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+/* aside copo grande */
+aside.copo{
+    z-index: 1;
+    display: inline; 
+    margin-left: 13%;
+    position: fixed;
+}
+img#copo_grande_img{
+    width: 350px;
+    height: 490px;
+}
+
+/* aside copos pequenos */
+aside.copos{
+    position: relative;
+    top: -100px;
+    left: 40%; 
+}
+aside.copos>nav>picture>img{
+    width: 85px;
+    height: 110px;
+}
+
+
+/* aside logos de redes sociais */
+aside.sociais{
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    margin-left: 43%;
+}
+aside.sociais>nav{
+    margin-top: 150px;
+}
+aside.sociais>nav>picture>img{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+/* aside circulo*/
+div.circle{
+    z-index: 0;
+    top: 200px;
+    width: 1000px;
+    height: 1000px;
+    background-color: var(--corbucks);
+    margin-left: 60%;
+    position: fixed;
+    border-radius: 50%;
+}
